@@ -302,6 +302,11 @@ header .copyright {
   opacity: 0.7;
 }
 
+header .copyright img {
+  width: auto; /* 设置图像宽度为 80 像素 */
+  height: 15px; /* 保持图像高度自适应，以保持纵横比 */
+  vertical-align: middle; /* 让图像在垂直方向上与文本居中对齐 */
+}
 .mobile-header {
   background: rgba(78, 104, 129, 0.9);
   border-radius: 20px;
@@ -1109,7 +1114,7 @@ section.padding-60 {
 /*                     PRELOADER
 /*=================================================================*/
 #preloader {
-  background: #F6F7FF;
+  background: #C3B2A2;
   height: 100%;
   position: fixed;
   width: 100%;
