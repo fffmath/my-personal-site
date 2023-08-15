@@ -29,7 +29,7 @@ Version: 1.0
 body {
   color: #888;
   background-image: url(https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/%E6%B8%85_%E7%9F%B3%E6%B6%9B_%E8%8A%B1%E5%8D%89%E5%B1%B1%E6%B0%B4%E5%86%8C%E5%8D%81%E4%BA%8C%E5%BC%80_8.jpg);
-  background-size: contain;
+  background-size: 100% auto; /* 保持宽度为设备宽度，高度自适应 */
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.7;
@@ -307,6 +307,7 @@ header .copyright img {
   height: 15px; /* 保持图像高度自适应，以保持纵横比 */
   vertical-align: middle; /* 让图像在垂直方向上与文本居中对齐 */
 }
+
 .mobile-header {
   background: rgba(78, 104, 129, 0.9);
   border-radius: 20px;
@@ -449,6 +450,19 @@ section.padding-60 {
   margin: 0;
 }
 .section-title:after {
+  content: "";
+  background: #92585a;
+  border-radius: 25px;
+  display: block;
+  height: 5px;
+  margin-top: 14px;
+  width: 30px;
+}
+
+.archive-header{
+  margin: 0;
+}
+.archive-header:after {
   content: "";
   background: #92585a;
   border-radius: 25px;
@@ -1115,9 +1129,11 @@ section.padding-60 {
 /*=================================================================*/
 #preloader {
   background: #C3B2A2;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   position: fixed;
-  width: 100%;
+  top: 0px;
+  bottom: 0px;
   z-index: 5;
 }
 
