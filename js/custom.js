@@ -218,7 +218,7 @@ $(function(){
     $('.vertical-menu li a[href^="#"]:not([href="#"])').on('click', function(event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top-50
+        scrollTop: $($anchor.attr('href')).offset().top-49.5
       }, 800, 'easeInOutQuad');
       event.preventDefault();
     });
