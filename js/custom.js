@@ -129,7 +129,7 @@ $(document).on('ready', function() {
       dots: true,
       arrows: false,
       slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 768,
@@ -144,16 +144,18 @@ $(document).on('ready', function() {
     });
 
     $('.clients-wrapper').slick({
+      autoplay:true,
+      autoplaySpeed:1500,
       dots: false,
       arrows: false,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             dots: false,
             arrows: false,
           }
