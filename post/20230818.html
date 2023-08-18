@@ -104,154 +104,153 @@
             <div class="portfolio-content mt-5">
 				<p>安装步骤参考官网<a href="https://github.com/fplll/g6k">g6k</a>和<a href="https://blog.csdn.net/qq_33877253/article/details/118226417">傅小凤</a>。此时有一个0.1.2的发行版，发行于2022年，但我是按照此时（2023/8/18）的仓库代码安装的。</p>
 				<p>我的安装环境是ubuntu 20.04（wsl）｜ python3， 我尝试在macos（m1）芯片或者centos上安装，都遇到了一些问题，最后在ubuntu with python3成功运行。</p>
-				<p>下图是我的系统版本和python版本，ubuntu 20.04.6和python 3.8.10</p>
-				<p align="center">
+				<p>下图是我的系统版本和Python版本，Ubuntu 20.04.6和Python 3.8.10：</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30739.jpg" alt="g6k">
+							<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30739.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
-				<p>使用 sudo su root，切换到root。</p>
-				<p>安装g6k至本地，可以采用git clone，即：git clone https://github.com/fplll/g6k.git</p>
-				<p align="center">
+				</div>
+				<p>使用 sudo su root，切换到 root。</p>
+				<p>安装 g6k 至本地，可以采用 git clone，即：git clone https://github.com/fplll/g6k.git</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30740.jpg" alt="g6k">
+							<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30740.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>				
 				<p>用cd g6k进入g6k并使用ls查看g6k下文件。我们发现有一个requirements.txt和bootstrap.sh文件。</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30741.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30741.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>接下来我们先安装依赖项。</p>
 				<p>首先pip3 install -r requirements.txt 下载依赖项。</p>
-				<p>接下来用 python3 -m pip install virtualenv安装virtualenv，这个接下来会用到，我们在安装脚本bootstrap.sh会发现它创建了个虚拟环境。</p>
-				<p align="center">
+				<p>然后用 python3 -m pip install virtualenv安装virtualenv，这个接下来会用到，我们在安装脚本bootstrap.sh会发现它创建了个虚拟环境。</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30749.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30749.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
-				<p>apt-get install autoconf automake pkg-config安装依赖项。</p>
-				<p align="center">
+				</div>
+				<p>输入apt-get install autoconf automake pkg-config安装依赖项。</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30742.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30742.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>它会问你yes/no，此时输入y并回车继续安装。</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30745.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30745.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>				
-				<p>安装gmp：apt-get install libtool-bin libgmp-dev #gmp</p>
-				<p align="center">
+				</div>				
+				<p>安装gmp：apt-get install libtool-bin libgmp-dev #gmp：</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30743.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30743.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>				
+				</div>				
 				<p>它同样会问你yes/no，此时输入y并回车继续安装。</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30744.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30744.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>	
-				<p>安装mpfr：apt-get install libmpfr-dev #mpfr</p>
-				<p align="center">
+				</div>	
+				<p>安装mpfr：apt-get install libmpfr-dev #mpfr：</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30746.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30746.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
-				<p>安装qd：apt-get install libqd-dev #qd</p>
-				<p align="center">
+				</div>
+				<p>安装qd：apt-get install libqd-dev #qd：</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30747.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30747.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>它同样会问你yes/no，此时输入y并回车继续安装。</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30748.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30748.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>接下来执行脚本文件，这里有个小错误就是脚本文件里面有的地方没有声明python3，因此我们按照<a href="https://blog.csdn.net/qq_33877253/article/details/118226417">傅小凤</a>把官网的命令改为PYTHON=python3 ./bootstrap.sh，或者修改./bootstrap.sh也可以，这里我们使用命令PYTHON=python3 ./bootstrap.sh。</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30750.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30750.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
-				这个地方用到了之前安装的autoconf，automake。
-				<p align="center">
+				</div>
+				<p>这个地方用到了之前安装的autoconf，automake。</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30751.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30751.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>cxx这里会慢一些，我用阿里云2核4g的服务器到这里就会卡住，可能是对内存或者处理器有一些要求。</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30752.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30752.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
-				<p>耐心等待有的地方会出现warning不用管。</p>
-				<p>运行结束显示如下：</p>
-				<p align="center">
+				</div>
+				<p>耐心等待有的地方会出现warning不用管，运行结束显示如下：</p>
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30753.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30753.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>我们按照官网切换进虚拟环境source ./activate，会在命令行最前面显示(g6k-env)。</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30754.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30754.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>运行一个例子试一试，这里我们运行的是lwe_challenge，选取n=40以及alpha=0.005，对应的命令是python lwe_challenge.py 40 --lwe/alpha 0.005。运行结果如下：</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30755.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30755.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>退出虚拟环境的话命令是deactivate。</p>
-				<p align="center">
+				<div style="text-align: center;">
 					<p>
 						<a target="_blank">
-						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30756.jpg" alt="g6k">
+						<img src="https://fffmath-img.oss-cn-beijing.aliyuncs.com/img/WechatIMG30756.jpg" alt="g6k" style="width: 100%;">
 						</a>
 					</p>
-				</p>
+				</div>
 				<p>最后感谢g6k的开发人员和傅小凤的教程。</p>
 			</div>
         </section>
