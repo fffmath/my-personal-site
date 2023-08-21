@@ -129,7 +129,7 @@ $(document).on('ready', function() {
       dots: true,
       arrows: false,
       slidesToShow: 2,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       responsive: [
         {
           breakpoint: 768,
@@ -149,13 +149,13 @@ $(document).on('ready', function() {
       dots: false,
       arrows: false,
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 4,
       responsive: [
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             dots: false,
             arrows: false,
           }
@@ -220,7 +220,7 @@ $(function(){
     $('.vertical-menu li a[href^="#"]:not([href="#"])').on('click', function(event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top-49.5
+        scrollTop: $($anchor.attr('href')).offset().top-49
       }, 800, 'easeInOutQuad');
       event.preventDefault();
     });
