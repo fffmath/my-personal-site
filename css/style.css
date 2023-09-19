@@ -400,25 +400,6 @@ header .copyright img {
   height: 6px;
   width: 6px;
 }
-.mobile-header button.menu-icon {
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  outline: none;
-  vertical-align: middle;
-  padding: 0;
-}
-.mobile-header button.menu-icon span {
-  background: #FFF;
-  border-radius: 10px;
-  display: block;
-  height: 4px;
-  width: 25px;
-}
-.mobile-header button.menu-icon span:nth-child(2) {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
 .mobile-header a {
   color: #FFF;
 }

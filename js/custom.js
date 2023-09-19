@@ -177,16 +177,6 @@ $(document).on('ready', function() {
 $(function(){
     "use strict";
 
-    $('.menu-icon').on( 'click', function() {
-        $('header.left').toggleClass('open');
-        $('.mobile-header, main.content').toggleClass('push');
-    });
-
-    $('main.content, header.left button.close').on( 'click', function() {
-        $('header.left').removeClass('open');
-        $('.mobile-header, main.content').removeClass('push');
-    });
-
     /*=========================================================================
      Counterup JS for facts
      =========================================================================*/
@@ -220,7 +210,7 @@ $(function(){
     $('.vertical-menu li a[href^="#"]:not([href="#"])').on('click', function(event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top-50
+        scrollTop: $($anchor.attr('href')).offset().top-49
       }, 800, 'easeInOutQuad');
       event.preventDefault();
     });
@@ -270,5 +260,4 @@ $(function(){
             scrollTop : 0                       // Scroll to top of body
         }, 400);
     });
-
 });
